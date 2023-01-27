@@ -13,7 +13,7 @@ body {
   position: absolute;
   top: -310px;
   left: 50%;
-  
+  height: 300px;
   padding: 10px 10px 0 10px;
   color: rgb(0, 2, 136);
   transition: all 1000ms ease-in-out;
@@ -64,6 +64,10 @@ z-index: 99999;
   z-index: 1;
 }
 
+.moved1:hover{
+  cursor: pointer;
+}
+
 .moved2 {
   position: absolute;
   top: 30%;
@@ -72,12 +76,19 @@ z-index: 99999;
   z-index: 1;
 }
 
+.moved2:hover{
+  cursor: pointer;
+}
+
 .moved3 {
   position: absolute;
   top: 27%;
   left: calc(50% - 100px);
   transform: rotate(-15deg);
   z-index: 1;
+}
+.moved3:hover{
+  cursor: pointer;
 }
 
 .moved4 {
@@ -88,12 +99,19 @@ z-index: 99999;
   z-index: 1;
 }
 
+.moved4:hover{
+  cursor: pointer;
+}
+
 .moved5 {
   position: absolute;
   top: 28%;
   left: calc(50% - 100px);
   transform: rotate(-5deg);
   z-index: 1;
+}
+.moved5:hover{
+  cursor: pointer;
 }
 
 .movedRight {
@@ -219,7 +237,7 @@ z-index: 99999;
   color: white;
   background-color: rgba(0, 0, 0, 0);
   text-align: center;
-  font-family: Montserrat;
+  font-family: 'Caveat', cursive;
 }
 
 .finalTextMoved {
@@ -233,10 +251,10 @@ z-index: 99999;
 
 @keyframes heart1 {
   0% {}
-  100% { top: -20%; }
+  0% { top: -20%; }
 }
 
 @keyframes finalText {
   0% {}
-  100% { top: 20vh; }
+  100% { top: 50vh; }
 }
