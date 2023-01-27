@@ -38,17 +38,18 @@ heart3.addEventListener('click', clickheart3);
 heart4.addEventListener('click', clickheart4);
 heart5.addEventListener('click', clickheart5);
 
+
+function clickModal(e) {
+  if(e.target !== no && e.target !== yes) {
+    wrongAnswer.style.opacity = '0';
+  }
+}
+
 function clickNo(e) {
   if(e.target == no) {
     no.style.display = 'none';
     wrongAnswer.style.opacity = '1';
     yes.style.backgroundColor = '#00ff31';
-  }
-}
-
-function clickModal(e) {
-  if(e.target !== no && e.target !== yes) {
-    wrongAnswer.style.opacity = '0';
   }
 }
 
